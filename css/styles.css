@@ -903,6 +903,9 @@ border: 1px solid #404BBF;
 .section.features {
 	padding-bottom: 0;
 }
+.features.list {
+	column-gap: 24px;
+}
 .features.list > li {
 	width: 264px;
 }
