@@ -807,10 +807,9 @@ border: 1px solid #404BBF;
 	width: 16px;
 	height: 16px;
 }
-/* PHONE */
-@media screen and (min-width: 428px){
+
 	.container {
-		max-width: 426px;
+		width: 426px;
 	}
 	.bc-icon {
 		display: none;
@@ -820,7 +819,6 @@ border: 1px solid #404BBF;
 		display: none;
 	}
 
-}
 /* TABLET */
 @media screen and (min-width: 768px){
 	.container {
