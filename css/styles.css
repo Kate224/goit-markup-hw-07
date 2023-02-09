@@ -822,7 +822,7 @@ border: 1px solid #404BBF;
 /* TABLET */
 @media screen and (min-width: 768px){
 	.container {
-		max-width: 766px;
+		width: 766px;
 	}
 	.section.hero {
 		padding-top: 111px;
@@ -874,7 +874,7 @@ border: 1px solid #404BBF;
 /* DESKTOP */
 @media screen and (min-width: 1440px){
 	.container {
-		max-width: 1158px;
+		width: 1158px;
 	}
 	.section {
 	padding-top: 120px;
