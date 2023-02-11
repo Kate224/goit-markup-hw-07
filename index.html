@@ -28,6 +28,73 @@
 				<li class="item"><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
 				<li class="item"><a href="tel:+110001111111" class="link contact">+11 (000) 111-11-11</a></li>
 			</ul>
+			<button class="menu-toggle js-open-menu"
+			aria-expanded="false"
+			aria-controls="mobile-menu"
+			type="button">
+				<svg class="btn-menu-icon" width="32" height="22">
+					<use href="./images/sprite.svg#icon-menu"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="menu-mob js-menu-container"
+		id="mobile-menu">
+			<div class="container menu-phone">
+				<div>
+					<button class="modal-icon js-close-menu"
+					type="button">
+							<svg width="8" height="8">
+								<use href="./images/sprite.svg#icon-close"></use>
+							</svg>
+					</button>
+					<nav class="mob-nav">
+						<ul class="mob-nav-list list">
+							<li class="mob-nav-item"><a href="./" class="link">Studio</a></li>
+							<li class="mob-nav-item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+							<li class="mob-nav-item"><a href="" class="link">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div>
+					<ul class="mob-contacts list">
+						<li class="mob-contacts-tel"><a href="tel:+110001111111" class="link contact">+11 (000) 111-11-11</a></li>
+						<li class="mob-contacts-item"><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
+					</ul>
+					<ul class="list mob-media">
+						<li class="icons">
+							<a href="" class="media link">
+								<svg class="icon-media" width="24" height="24">
+									<use class="icon" href="./images/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+		
+						<li class="icons">
+							<a href="" class="media link">
+								<svg class="icon-media" width="24" height="24">
+									<use href="./images/sprite.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+		
+						<li class="icons">
+							<a href="" class="media link">
+								<svg class="icon-media" width="24" height="24">
+									<use href="./images/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+		
+						<li class="icons">
+							<a href="" class="media link">
+								<svg class="icon-media" width="24" height="24">
+									<use href="./images/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div >
 		</div>
 	</header>
 	<main>
@@ -188,7 +255,12 @@
 					<li class="item-team">
 						<article class="card">
 						<div class="card-picture">
-							<img src="./images/img3.jpg" 
+							<img 
+							src="./images/img3.jpg"
+							srcset="
+							./images/img3.jpg 1x
+							./images/img3-2x.jpg 2x
+							"
 							alt="portrait of Mark Guerrero"
 							width="264">
 						</div>
@@ -236,7 +308,12 @@
 					<li class="item-team">
 						<article class="card">
 							<div class="card-picture">
-								<img src="./images/img4.jpg" 
+								<img
+								src="./images/img4.jpg"
+								srcset="
+								./images/img4.jpg 1x
+								./images/img4-2x.jpg 2x
+								"
 								alt="portrait of Tom Ford"
 								width="264">
 							</div>
@@ -283,7 +360,12 @@
 					<li class="item-team">
 						<article class="card">
 							<div class="card-picture">
-								<img src="./images/img5.jpg" 
+								<img
+								src="./images/img5.jpg"
+								srcset="
+								./images/img5.jpg 1x
+								./images/img5-2x.jpg 2x
+								"
 								alt="portrait of Camila Garcia"
 								width="264">
 							</div>
@@ -330,7 +412,12 @@
 					<li class="item-team">
 						<article class="card">
 							<div class="card-picture">
-								<img src="./images/img6.jpg" 
+								<img
+								src="./images/img6.jpg"
+								srcset="
+								./images/img6.jpg 1x
+								./images/img6-2x.jpg 2x
+								"
 								alt="portrait of Daniel Wilson"
 								width="264">
 							</div>
@@ -440,10 +527,10 @@
 	
 					<div class="socials">
 						<p class="footer-text">Social media</p>
-							<ul class="list footer-socials">
+							<ul class="list footer-socials-icons">
 								<li class="footer-icons">
 									<a href="" class="footer-media link">
-										<svg class="footer-icon-svg" width="24" height="24">
+										<svg class="footer-icon" width="24" height="24">
 											<use href="./images/sprite.svg#icon-instagram"></use>
 										</svg>
 									</a>
@@ -451,7 +538,7 @@
 			
 								<li class="footer-icons">
 									<a href="" class="footer-media link">
-										<svg class="footer-icon-svg" width="24" height="24">
+										<svg class="footer-icon" width="24" height="24">
 											<use href="./images/sprite.svg#icon-twitter"></use>
 										</svg>
 									</a>
@@ -459,7 +546,7 @@
 			
 								<li class="footer-icons">
 									<a href="" class="footer-media link">
-										<svg class="footer-icon-svg" width="24" height="24">
+										<svg class="footer-icon" width="24" height="24">
 											<use href="./images/sprite.svg#icon-facebook"></use>
 										</svg>
 									</a>
@@ -467,7 +554,7 @@
 			
 								<li class="footer-icons">
 									<a href="" class="footer-media link">
-										<svg class="footer-icon-svg" width="24" height="24">
+										<svg class="footer-icon" width="24" height="24">
 											<use href="./images/sprite.svg#icon-linkedin"></use>
 										</svg>
 									</a>
@@ -490,5 +577,6 @@
 		</div>
 	</footer>
 	<script src="./js/modal.js"></script>
+	<script src="./js/menu.js"></script>
 </body>
 </html> 
