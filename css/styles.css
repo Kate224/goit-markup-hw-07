@@ -137,7 +137,7 @@ button {
 }
 .mob-contacts-tel {
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 18px;
 	line-height: 1.11;
 	text-transform: capitalize;
 	color: #4D5AE5;
@@ -812,7 +812,11 @@ border: 1px solid #404BBF;
 	height: 16px;
 }
 
-
+@media screen and (min-width: 420px) {
+	.mob-contacts-tel {
+		font-size: 36px;
+	}
+}
 
 @media screen and (min-width: 480px){
 .hero {
